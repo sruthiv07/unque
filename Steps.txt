@@ -1,0 +1,18 @@
+1. Create an AmazonDocument DB
+2. Create a instance 
+3. Add security group with ports SSH, 27017 (TCP) and 3001 (TCP)
+4. sudo apt update
+5. sudo apt install -y nodejs npm git
+6. Clone the repo - https://github.com/sruthiv07/unque.git
+7. Edit index.html to have mongo creds
+8. create .env file with MONGO_URL, PORT, JWT_SECRET
+9. Download the CA certificate - curl -o rds-combined-ca-bundle.pem https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem
+10. npm install, node index.js
+
+
+API:
+1. Create student and professor
+2. login as professor and add availability
+3. login as student and book professor
+4. copy the appoinment id 
+5. Use the post-pone api and add them
