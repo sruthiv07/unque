@@ -120,6 +120,7 @@ const bookAppointment = async (req, res, next) => {
       const formattedAppointments = appointments.map(appointment => ({
         professor: appointment.professorId.name,  // Show professor's name
         appointmentTime: moment.utc(appointment.time).format('MMMM Do YYYY, h:mm:ss a'),  // Format time with moment.js
+        appointmentId: appointment._id.toString(),
         status: appointment.status,
       }));
   
